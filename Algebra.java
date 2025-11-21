@@ -25,20 +25,32 @@ public class Algebra {
 
 	// Returns x1 + x2
 	public static int plus(int x1, int x2) {
-		int result = x1; 
-		for (int i=0; i < x2; i++) {
-			result ++;
-		}
-		return result;
+		 int result = x1; 
+    if (x2 > 0) {
+        for (int i = 0; i < x2; i++) {
+            result++;
+        }
+    } else {
+        for (int i = 0; i > x2; i--) {
+            result--;
+        }
+    }
+    return result;
 	}
 
 	// Returns x1 - x2
 	public static int minus(int x1, int x2) {
-		int result = x1;
-		for (int i = 0; i < x2; i++ ){
-			result --;
-		}
-		return result;
+		 int result = x1;
+    if (x2 > 0) {
+        for (int i = 0; i < x2; i++) {
+            result--;
+        }
+    } else {
+        for (int i = 0; i > x2; i--) {
+            result++;
+        }
+    }
+    return result;
 	}
 
 	// Returns x1 * x2
